@@ -22,14 +22,11 @@ You should add 'archive/contents.json' and 'archive/bucket-*.html' under main di
 	     ]
 	}
 
-
 the bucket-*.html should has format:
-
 
     <div class="item">
         the book's content
     </div>
     ....
-
 
 one bucket-*.html file can contain eight "item" div at most.
