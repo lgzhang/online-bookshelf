@@ -14,7 +14,8 @@ The code consists a book.html file which uses JavaScript and CSS to display thos
 You should add 'archive/contents.json' and 'archive/bucket-*.html' under main dir, the contents.json should has format:
 
 `
-	{
+
+{
         "buckets" : [
 
                 { "path":"archive/bucket-1.html" },
@@ -28,11 +29,13 @@ You should add 'archive/contents.json' and 'archive/bucket-*.html' under main di
      ]
 
 }
+
 `
 
 the bucket-*.html should has format:
 
 `
+
      <div class="item">
 
          the book's content
@@ -40,6 +43,7 @@ the bucket-*.html should has format:
      </div>
 
      ....
+
 `
 
 one bucket-*.html file can contain eight "item" div at most.
