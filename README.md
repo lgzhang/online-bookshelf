@@ -14,32 +14,32 @@ The code consists a book.html file which uses JavaScript and CSS to display thos
 You should add 'archive/contents.json' and 'archive/bucket-*.html' under main dir, the contents.json should has format:
 
 
-{
-        "buckets" : [
+	{
+	        "buckets" : [
 
-                { "path":"archive/bucket-1.html" },
+	                { "path":"archive/bucket-1.html" },
 
-                { "path":"archive/bucket-2.html" },
+	                { "path":"archive/bucket-2.html" },
 
-                { "path":"archive/bucket-3.html" }
+	                { "path":"archive/bucket-3.html" }
 
-		...
+			...
 
-     ]
+	     ]
 
-}
+	}
 
 
 the bucket-*.html should has format:
 
 
-     <div class="item">
+    <div class="item">
 
-         the book's content
+        the book's content
 
-     </div>
+    </div>
 
-     ....
+    ....
 
 
 one bucket-*.html file can contain eight "item" div at most.
