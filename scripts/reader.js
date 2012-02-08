@@ -197,10 +197,10 @@ var reader = {
 					//fire the fade_img function when imgs in current bucket had loaded
 			                $('#error').html("loading...").show();
 					$('#bucket-'+idx+' .item img').onImgsLoaded(function() {
-					//$('#bucket-'+idx+' .item img').load(function() {
-		        	              fadeImg(this, '#bucket-'+idx);
+					//$('#bucket-'+idx+' .item img').load(function() 
+						fadeImg(this, '#bucket-'+idx);
+						$('#error').fadeOut(200);
         			        });
-					$('#error').fadeOut(1000);
 				},
 				error: function(XMLHttpRequest, textStatus, errorThrown) {
 					reader.error("Can't load bucket file: "+textStatus + ', '+errorThrown);
