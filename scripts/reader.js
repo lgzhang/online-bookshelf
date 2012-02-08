@@ -192,6 +192,7 @@ var reader = {
 				dataType: 'html',
 				data: {},
 				async: false,
+				cache: false,
 				success: function(returnedData) {
 					$('#bucket-'+idx).html(returnedData).addClass('loaded');
 					//fire the fade_img function when imgs in current bucket had loaded
@@ -233,6 +234,7 @@ var reader = {
 			dataType: 'json',
 			data: {},
 			async: false,
+			cache: false,
 			success: function(returnedData) {
 				// Yes, we have today's contents.
 				reader.issueContents = returnedData;
