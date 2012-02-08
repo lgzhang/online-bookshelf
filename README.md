@@ -34,9 +34,7 @@ the bucket-*.html should has format:
 
 
     <div class="item">
-
         the book's content
-
     </div>
 
     ....
