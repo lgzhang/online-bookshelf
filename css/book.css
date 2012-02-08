@@ -1,0 +1,111 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+    	margin: 20px 0;
+	position: relative;
+}
+a {
+    text-decoration: none;
+    color: #86AEBB;
+}
+img {
+    border: none;
+}
+h3 {
+    font: bold 16px/120% Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+#pagewrap {
+    width: 1060px;
+    margin: 0 auto;
+}
+#window {
+	width: 1060px;
+	overflow: hidden;
+	position: relative;
+}
+#books {
+	/* width: 1830px; */ /* #window width * 3 */
+	position: relative;
+	top: 0;
+	left: 0;
+}
+#books div.bucket {
+	width: 1060px; /* The page width is also set in reader.js, so change there too if you change it. */
+	float: left;
+}
+#error {
+	position: absolute;
+	top: 40px;
+	left: 100px;
+	color: #933;
+	background: #fff;
+	padding: 1em 20px;
+	display: none;
+	border: 1px solid #666;
+}
+.item {
+    margin: 0 0 20px 60px;
+    float: left;
+}
+.item img {
+    opacity:0;
+    width: 190px;
+    height: 270px;
+}
+.item a {
+    text-decoration: none;
+    color: #86AEBB;
+}
+
+#prev,
+#next {
+	display: block;
+	position: fixed;
+	top: 0;
+	background: #ddd;
+	text-align: center;
+	font-size: 4em;
+	cursor: default;
+	font-family: "Times New Roman", Georgia, serif;
+	text-decoration: none;
+}
+#prev span,
+#next span {
+	display: none;
+}
+.on#next,
+.on#prev {
+	cursor: pointer;
+}
+#prev {
+	left: 0;
+	background: #eee url(img/bg_prev.png) right top repeat-y;
+}
+#next {
+	right: 0;
+	background: #eee url(img/bg_next.png) left top repeat-y;
+}
